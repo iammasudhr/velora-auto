@@ -1,0 +1,35 @@
+{
+  "name": "velora-auto",
+  "version": "1.0.0",
+  "description": "VELORA premium automotive detailing static-export website",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "check": "node scripts/check-export.mjs",
+    "preview": "python3 -m http.server 3000 --directory out"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource-variable/jost": "^5.3.0",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-icons": "^5.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
